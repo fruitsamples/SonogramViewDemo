@@ -1,0 +1,50 @@
+{
+    IBClasses = (
+        {CLASS = CAGraphView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {changeBackgroundColor = id; changeDistortion = id; changeLineColor = id; }; 
+            CLASS = CASonogramView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                myBackgroundWell = NSColorWell; 
+                myDistortionButton = NSMatrix; 
+                myHoldButton = NSButton; 
+                myLineWell = NSColorWell; 
+            }; 
+            SUPERCLASS = CAGraphView; 
+        }, 
+        {
+            ACTIONS = {iaParam1Changed = id; }; 
+            CLASS = CocoaView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {uiParam1Slider = NSSlider; uiParam1TextField = NSTextField; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = CocoaViewFactory; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {uiFreshlyLoadedView = CocoaView; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            CLASS = SonogramViewDemoView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {uiSonogramView = CASonogramView; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = SonogramViewDemoViewFactory; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {uiFreshlyLoadedView = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = SpectrumViewDemoViewFactory; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {uiFreshlyLoadedView = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

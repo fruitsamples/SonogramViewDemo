@@ -1,0 +1,5 @@
+//
+// Prefix header for all source files of the 'SonogramViewDemo' target in the 'SonogramViewDemo' project.
+//
+
+#include <CoreServices/CoreServices.h>
